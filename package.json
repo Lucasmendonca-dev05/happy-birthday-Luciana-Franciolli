@@ -1,0 +1,25 @@
+{
+  "name": "luciana-fotos",
+  "version": "1.0.0",
+  "description": "Site estático (HTML/CSS/JS). Hoje mostra \"em breve\" + contagem regressiva.",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fotos": "node tools/gen-photos.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucasmendonca-dev05/happy-birthday-Luciana-Franciolli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucasmendonca-dev05/happy-birthday-Luciana-Franciolli/issues"
+  },
+  "homepage": "https://github.com/Lucasmendonca-dev05/happy-birthday-Luciana-Franciolli#readme",
+  "private": "true",
+  "devDependencies": {
+    "sharp": "^0.35.5"
+  }
+}

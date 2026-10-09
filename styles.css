@@ -8,7 +8,7 @@
   --sans: "Jost", system-ui, sans-serif;
 }
 * { box-sizing: border-box; margin: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background: var(--wine-deep); }
 body {
   font-family: var(--sans); font-weight: 300; color: var(--cream);
   background: radial-gradient(ellipse at 50% 30%, var(--wine-soft), var(--wine) 55%, var(--wine-deep));
@@ -18,6 +18,10 @@ em { font-style: italic; }
 .eyebrow { font-size: .75rem; letter-spacing: .4em; text-transform: uppercase; color: var(--rose); }
 
 /* Em breve */
+.mono { font-family: var(--serif); font-style: italic; font-size: 1.3rem; letter-spacing: .1em; width: 3.4rem; height: 3.4rem; display: grid; place-items: center; border: 1px solid var(--rose); border-radius: 50%; }
+.ig { color: var(--rose); text-decoration: none; font-size: .75rem; letter-spacing: .25em; transition: color .3s; }
+.ig:hover, .credit a:hover { color: var(--cream); }
+.credit a { color: inherit; text-decoration: none; }
 .soon {
   min-height: 100vh; display: flex; flex-direction: column; align-items: center;
   justify-content: center; text-align: center; padding: 2rem 1rem; gap: 1.6rem;
@@ -41,7 +45,7 @@ em { font-style: italic; }
 .grid img { width: 100%; display: block; transition: transform .6s ease, opacity .6s; opacity: 0; }
 .grid img.in { opacity: 1; }
 .grid button:hover img { transform: scale(1.03); }
-.credit { text-align: center; margin-top: 4rem; font-size: .75rem; letter-spacing: .3em; text-transform: uppercase; color: var(--rose); }
+.credit { text-align: center; line-height: 2.2; margin-top: 4rem; font-size: .75rem; letter-spacing: .3em; text-transform: uppercase; color: var(--rose); }
 
 .btn {
   display: inline-block; padding: .8rem 1.6rem; border: 1px solid var(--rose); color: var(--cream);

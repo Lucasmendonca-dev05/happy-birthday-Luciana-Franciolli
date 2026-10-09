@@ -23,11 +23,12 @@
     if (!list.length) return;
     $("soon").hidden = true;
     $("credit").textContent = S.photographer;
+    if (S.photographerLink) $("credit").href = S.photographerLink;
+    $("ig2").href = S.instagram;
     $("gallery").hidden = false;
-    if (S.zipFile) { $("zip").href = S.zipFile; $("zip").hidden = false; }
-    const files = list.map((f) => "photos/" + f);
-    $("grid").innerHTML = files.map((src, i) =>
-      `<button data-i="${i}" aria-label="Abrir foto ${i + 1}"><img loading="lazy" src="${src}" alt="Foto ${i + 1}"></button>`).join("");
+    const files = list.map((p) => "photos/" + p.file);
+    $("grid").innerHTML = list.map((p, i) =>
+      `<button data-i="${i}" aria-label="Abrir foto ${i + 1}"><img loading="lazy" width="${p.w}" height="${p.h}" src="photos/thumbs/${p.thumb}" alt="Foto ${i + 1}"></button>`).join("");
     document.querySelectorAll(".grid img").forEach((img) =>
       img.complete ? img.classList.add("in") : img.addEventListener("load", () => img.classList.add("in")));
 
