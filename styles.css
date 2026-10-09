@@ -40,8 +40,8 @@ em { font-style: italic; }
 .gallery { max-width: 1400px; margin: 0 auto; padding: 4rem 1.2rem; animation: fade 1s ease both; }
 .g-head { display: flex; justify-content: space-between; align-items: end; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
 .g-head h2 { font-family: var(--serif); font-weight: 300; font-size: clamp(2.2rem, 6vw, 3.8rem); margin-top: .4rem; }
-.grid { columns: 3 280px; column-gap: 12px; }
-.grid button { display: block; width: 100%; margin-bottom: 12px; padding: 0; border: 0; background: var(--wine-deep); cursor: zoom-in; overflow: hidden; }
+.grid { column-count: 5; column-gap: 8px; }
+.grid button { display: block; width: 100%; margin-bottom: 8px; padding: 0; border: 0; background: var(--wine-deep); cursor: zoom-in; overflow: hidden; }
 .grid img { width: 100%; display: block; transition: transform .6s ease, opacity .6s; opacity: 0; }
 .grid img.in { opacity: 1; }
 .grid button:hover img { transform: scale(1.03); }
@@ -53,6 +53,10 @@ em { font-style: italic; }
   background: transparent; cursor: pointer; transition: background .3s, color .3s;
 }
 .btn:hover { background: var(--cream); color: var(--wine); }
+
+@media (max-width: 1100px) { .grid { column-count: 4; } }
+@media (max-width: 800px) { .grid { column-count: 3; } }
+@media (max-width: 520px) { .grid { column-count: 2; column-gap: 6px; } .grid button { margin-bottom: 6px; } }
 
 /* Lightbox */
 .lightbox { position: fixed; inset: 0; z-index: 10; background: rgba(30,4,10,.96); display: flex; align-items: center; justify-content: center; }
