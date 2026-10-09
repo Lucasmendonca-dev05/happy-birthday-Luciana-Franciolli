@@ -8,5 +8,5 @@ window.SITE = {
   eventDate: "2026-10-17T17:00:00-03:00",
   instagram: "https://www.instagram.com/lucianafranciolli/",
   // Mude para true no dia em que as fotos estiverem prontas.
-  galleryOpen: false,
+  galleryOpen: true,
 };
