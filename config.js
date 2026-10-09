@@ -2,8 +2,8 @@
 window.SITE = {
   name: "Luciana Franciolli",
   // Seu nome/marca, aparece no rodapé da galeria.
-  photographer: "Seu Nome",
-  photographerLink: "", // ex.: "https://instagram.com/seuperfil" (deixe "" para sem link)
+  photographer: "@soulmendonca",
+  photographerLink: "https://www.instagram.com/soulmendonca/",
   // Início da festa (horário de Brasília).
   eventDate: "2026-10-17T17:00:00-03:00",
   instagram: "https://www.instagram.com/lucianafranciolli/",
