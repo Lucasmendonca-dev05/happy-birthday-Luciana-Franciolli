@@ -42,7 +42,7 @@ em { font-style: italic; }
 .g-head h2 { font-family: var(--serif); font-weight: 300; font-size: clamp(2.2rem, 6vw, 3.8rem); margin-top: .4rem; }
 .grid { column-count: 5; column-gap: 8px; }
 .grid button { display: block; width: 100%; margin-bottom: 8px; padding: 0; border: 0; background: var(--wine-deep); cursor: zoom-in; overflow: hidden; }
-.grid img { width: 100%; display: block; transition: transform .6s ease, opacity .6s; opacity: 0; }
+.grid img { width: 100%; height: auto; display: block; transition: transform .6s ease, opacity .6s; opacity: 0; }
 .grid img.in { opacity: 1; }
 .grid button:hover img { transform: scale(1.03); }
 .credit { text-align: center; line-height: 2.2; margin-top: 4rem; font-size: .75rem; letter-spacing: .3em; text-transform: uppercase; color: var(--rose); }
